@@ -1,6 +1,13 @@
+/**
+ * KeeWeb plugin: keeweb-s3-storage
+ * @author Sergey Starostin
+ * @license MIT
+ */
+
 const Storage = require('storage/index').Storage;
 const BaseLocale = require('locales/base');
 const StorageBase = require('storage/storage-base').StorageBase;
+const Logger = require('util/logger').Logger;
 const signV4Algorithm = "AWS4-HMAC-SHA256";
 
 const HMAC = {
@@ -199,6 +206,7 @@ class S3Storage extends StorageBase {
 		this.icon = "database";
 		this.enabled = true;
 		this.uipos = 100;
+		this.logger = new Logger("storage-s3");
 	}
 
 	needShowOpenConfig() {
@@ -292,11 +300,11 @@ class S3Storage extends StorageBase {
 				key: opts ? opts.key : null,
 				secret: opts ? opts.secret : null,
 				region: opts ? opts.region : null,
-				origin: opts ? opts.origin : null,
-				nostat: true
+				origin: opts ? opts.origin : null
 			},
 			callback ?
 			(err, xhr) => {
+		        this.logger.debug(xhr, err, callback);
 				callback(err, xhr.response, this._calcStatByContent(xhr));
 			} :
 			null
@@ -336,8 +344,7 @@ class S3Storage extends StorageBase {
 				key: opts ? opts.key : null,
 				secret: opts ? opts.secret : null,
 				region: opts ? opts.region : null,
-				origin: opts ? opts.origin : null,
-				nostat: true
+				origin: opts ? opts.origin : null
 			},
 			callback ?
 			(err, xhr) => {
@@ -354,7 +361,6 @@ class S3Storage extends StorageBase {
 				callback = null;
 			}
 		};
-		const tmpPath = path.replace(/[^\/]+$/, (m) => "." + m) + "." + Date.now();
 		const saveOpts = {
 			path,
 			key: opts ? opts.key : null,
@@ -380,8 +386,7 @@ class S3Storage extends StorageBase {
 					...saveOpts,
 					op: "Save:put",
 					method: "PUT",
-					data,
-					nostat: true
+					data
 				},
 				(err) => {
 					if (err) {
@@ -651,9 +656,11 @@ class S3Storage extends StorageBase {
 			return null;
 		}
 
-		let revHash = HMAC.hash(xhr.response).substr(0, 10);
-		this.logger.debug("Calculated rev by content", `${xhr.response.byteLength} bytes`, revHash);
-		return revHash;
+		const rev = HMAC.hash(
+		    String.fromCharCode.apply(null, new Uint16Array(xhr.response))
+        ).substr(0, 10);
+		this.logger.debug("Calculated rev by content", `${xhr.response.byteLength} bytes`, rev);
+		return { rev };
 	}
 
 	_request(config, callback) {
@@ -700,19 +707,6 @@ class S3Storage extends StorageBase {
 				return;
 			}
 			const rev = xhr.getResponseHeader("Last-Modified");
-			if (!rev && !config.nostat) {
-				this.logger.debug(
-					config.op + " error",
-					config.path,
-					"no headers",
-					this.logger.ts(ts)
-				);
-				if (callback) {
-					callback(Locale.webdavNoLastModified, xhr);
-					callback = null;
-				}
-				return;
-			}
 			const completedOpName =
 				config.op + (config.op.charAt(config.op.length - 1) === "e" ? "d" : "ed");
 			this.logger.debug(completedOpName, config.path, rev, this.logger.ts(ts));

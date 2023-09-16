@@ -2,20 +2,16 @@
   "version": "0.0.1",
   "manifestVersion": "0.1.0",
   "name": "keeweb-s3-storage",
-  "description": "S3 storage for Keeweb",
+  "description": "S3 storage for KeeWeb",
   "author": {
     "name": "Sergey Starostin",
     "email": "starostin89@gmail.com",
     "url": "https://github.com/s-starostin/"
   },
   "resources": {
-    "js": "hGcHmcURsmd9MEn/zeCGPemUVHWVPkWucPEdcX+a4A9W2eytNVau0FjF2UXYRYiieyYqHeXJFB7Wuov9IYfSz+1qW6CyCzLy+QS6oxL3TajT8xK9M6eLSsKl5hXbNCzut3lIb5gXshbpW3RTAV+8mFE5K8Zjhr0nkXKdr0rRcpvzsIEx81OWJZQn092Ymv+jM3GYFY22pXpQBRCnzIC1YBzeAJMiOXcCNnI/+n67W5JGfvqNJBQWIqNfshlsjb1/nLvK5PDoYI1wQM3DhBvmE4wI/tBw8Vm7TyaDq+ETv9rmu4W2UycfAYrO9IoRJn7MbqWO8PSgoDOe0EKFLi5nGw=="
-  },
-  "locale": {
-    "name": "en-US",
-    "title": "English"
+    "js": "KNp0wCtLu7wtq8RKE3M9qwVsyUc7RP0dA4EDsV8HzJK40zAZqpgnRHExHF2H7viLfdBq7irTZrbUqzkIn0nFTD/paPF55Lexh1qnYiatzkRr6PZNT0+gjLs8VBkqu0t1UF64H3JPyL+H1zvJSbFgUIk5AwrFqhnxEBOFD+r/LLCQJHi2D5cyJREUFlpcrQJM0mZfBLBz2+OoR7/NnfX22DNZZkZrMSHoGByGx2tW8/Xm4HhqoboPS4KfqQuKmQiKNDmMTTIKES6svZ47CYuO882YVk5AEyIGKE3Wi8BGJy+ES3pYK1zKa8tvOPU2GX7wibI1LDWObYsbBEijkSZDZw=="
   },
   "license": "MIT",
-  "url": "https://github.com/s-starostin/keeweb-s3-storage/",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0nC0eNHIKU94aHLo9eAkE2um3TPelNtOqbGvGaiB6DP86cUv9OovvB8FQklAh/oMGY/FTKbG6TvtWqnmDFW0HKL9mhLSIsxmMkTKq4NFX5NLFBAU/13Qc51tKF4e/Sl9cYvY5Dr/t23XSny9tCtm8+21zdMS/mY9ty1sxk4rGirEbQqX5pZZPbO+zOas163Vwax7TYPgBNqGzSxz0k4h+3PUtL+Rp527zjf4/622Ce6csEmUboXkI94o2QGHGPQPD6PNj5u4l5EGJi9wBU+mzzGYlWKKNfB82OMHht/tM+sDvU+puWUU7YPfpz9MwMzY3njPew7pcVa7sBJKxloFNQIDAQAB"
+  "url": "https://dev.easydevops.org/keeweb-s3-storage/",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqZD+RAPOCs5x7uHpI6AdrDmjTXYcZ7LwHxnbmRZJAV1XdEpY2UUo29CbhlytWikffCDWOMF7Y0u2rIWVqoF0F8oGU2SkM3katzzxRIFqfLIzhJgw8vSnvvXMhu0wa84ComfXeA1lSthnizFLYD4F7w4Ya3UgpqX3xH0aGQ1/ldyoFoeM4ntk/bmLPq9qe60/blOon+Oy4iYyBFTt6YWZ1lWZqo+mbDFqpJJZ8LaDLP4ycNTdY1hN2EdiXq/77tT3y7gECsvsPWqRmb9eLks/XRgjgtVWfuvsnPA/fEXjtY+hC22qg3zxtDmIgbVsWq8RtGArO96dZk1xKTr/w0fLnwIDAQAB"
 }
