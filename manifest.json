@@ -4,14 +4,14 @@
   "name": "keeweb-s3-storage",
   "description": "S3 storage for KeeWeb",
   "author": {
-    "name": "Sergey Starostin",
-    "email": "starostin89@gmail.com",
+    "name": "ennetech, Sergey Starostin",
+    "email": "ennetech@gmail.com, starostin89@gmail.com",
     "url": "https://github.com/s-starostin/"
   },
   "resources": {
-    "js": "KNp0wCtLu7wtq8RKE3M9qwVsyUc7RP0dA4EDsV8HzJK40zAZqpgnRHExHF2H7viLfdBq7irTZrbUqzkIn0nFTD/paPF55Lexh1qnYiatzkRr6PZNT0+gjLs8VBkqu0t1UF64H3JPyL+H1zvJSbFgUIk5AwrFqhnxEBOFD+r/LLCQJHi2D5cyJREUFlpcrQJM0mZfBLBz2+OoR7/NnfX22DNZZkZrMSHoGByGx2tW8/Xm4HhqoboPS4KfqQuKmQiKNDmMTTIKES6svZ47CYuO882YVk5AEyIGKE3Wi8BGJy+ES3pYK1zKa8tvOPU2GX7wibI1LDWObYsbBEijkSZDZw=="
+    "js": "emH9ZnLogZ0D3v8kSJWje4caUdnB05blaBQDOIqRhWobzsdoYpOFq+ZmM0T110Y7ztSdpFzg0bffPEXn/9mPVymZp6q0kgpdfmLObNS4/dbUNOs0twB3PMCX9fRwWQms27CLfdCS1YDvfdA7aPrZQdGeqCLzId5I6KZaqXWCesrClUxdMT4q24X4l6h121S/mHNiKdM7y8xDJVD8bwNwEg/mH8oOhgWKE3NJidjBxe1MI33/aDsFPAcfdSri9prOnFZ0ZlRawEs7RcIfjv0niVf/Qi/Qnbt/J5RHnpx0t2vg0hmL2PtvDORugAPcnvXe54B6ixzzwqJPLZdGOKqVUg=="
   },
   "license": "MIT",
-  "url": "https://dev.easydevops.org/keeweb-s3-storage/",
-  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqZD+RAPOCs5x7uHpI6AdrDmjTXYcZ7LwHxnbmRZJAV1XdEpY2UUo29CbhlytWikffCDWOMF7Y0u2rIWVqoF0F8oGU2SkM3katzzxRIFqfLIzhJgw8vSnvvXMhu0wa84ComfXeA1lSthnizFLYD4F7w4Ya3UgpqX3xH0aGQ1/ldyoFoeM4ntk/bmLPq9qe60/blOon+Oy4iYyBFTt6YWZ1lWZqo+mbDFqpJJZ8LaDLP4ycNTdY1hN2EdiXq/77tT3y7gECsvsPWqRmb9eLks/XRgjgtVWfuvsnPA/fEXjtY+hC22qg3zxtDmIgbVsWq8RtGArO96dZk1xKTr/w0fLnwIDAQAB"
+  "url": "",
+  "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzg2mUdpiXUifxrfuLzmaF8mmGagy/LFfpb6hyFMMGszNxS7C0VVGtld0XDt9HnkhcGMQs543CG3fHkBQzd9qpUjcTQAc3P3DyO7NAv+hioHUcpOKTHC3Eyn4KQMzRnnkPtAwXcp2AgFHGbfli0XMrwol/Mo03u5xyw/aPgXdkJFQyftJRnWyaGhwquI5f582ve7Id+5wtaJ4qYUoOih/8CPXMropfRhLjf/eEauhms2S+s9zUNTwXos6gM+GonzOEHUmvH7rtFSUlZ30TLtOrQNZP2H+Vz+TYNsk6p4DDWseK2WjMLjKGUx6faGC4NmqWs7gfb5axXa2X3lwrLDIGQIDAQAB"
 }

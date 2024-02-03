@@ -657,7 +657,7 @@ class S3Storage extends StorageBase {
 		}
 
 		const rev = HMAC.hash(
-		    String.fromCharCode.apply(null, new Uint16Array(xhr.response))
+		    String.fromCharCode.apply(null, new Uint16Array(xhr.response.slice(0, Math.floor(xhr.response.byteLength / 2) * 2)))
         ).substr(0, 10);
 		this.logger.debug("Calculated rev by content", `${xhr.response.byteLength} bytes`, rev);
 		return { rev };
